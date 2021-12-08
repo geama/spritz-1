@@ -27,6 +27,7 @@ TYPE_MAJORITY_JUDGMENT = 'maj_jud'
 TYPE_MAJORITY_JUDGMENT_SECURE = 'maj_jud_sec'
 TYPE_SIMPLE_MAJORITY = 'simple_maj'
 TYPE_LIST_RAND = 'list_rand'
+#TYPE_LIST_CLUSTER_MJ = 'clustered_mj'
 TYPE_DESCRIPTION={TYPE_DRAW:_("Draw"), \
     TYPE_MAJORITY_JUDGMENT_SECURE: _("Secure Majority Judgment"), \
     TYPE_MAJORITY_JUDGMENT: "Majority Judgment", \

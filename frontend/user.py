@@ -10,6 +10,8 @@ if config.AUTH == 'superauth':
     import auth_superauth as auth
 if config.AUTH == 'test':
     import auth_test as auth
+if config.AUTH == 'OpenID':
+    import auth_openID as auth
     
 db = config.db
         

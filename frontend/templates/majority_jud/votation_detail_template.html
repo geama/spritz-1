@@ -1,3 +1,4 @@
+
 {% extends "votation_detail_template.html" %} {% block results %}
         <h3>{{_("Election Result")}}</h3>
         {% if count_voters == count_votes %}
@@ -44,13 +45,15 @@
             {% for r in counting %}
                 ["{{r.option_name}}",
                 {% for n in r.totals_array %}{{n}}, {% endfor %}
-                ''],           
+                ''],            
             {% endfor %}
           ]);
-    
+
+          //var len = options_array.length
           var options = {
-            width: 600,
-            height: 400,
+            title: 'Risultati elezione',
+            width: 1700,
+            height: 75*{{n_option}},
             legend: { position: 'top', maxLines: 3 },
             bar: { groupWidth: '75%' },
             isStacked: true

@@ -5,6 +5,12 @@ from sqlalchemy import Sequence,UniqueConstraint,PrimaryKeyConstraint,ForeignKey
 from sqlalchemy.orm import relationship
 
 class VotingUser(db.Model):
+    def __init__(self, user_id, user_name, pass_word, email, verified):
+        self.user_id = user_id
+        self.user_name = user_name
+        self.pass_word = pass_word
+        self.email = email
+        self.verified = verified
     """
     The table votinguser contains accounts that login into the system.
     Even if you use an external sso like google or superauth or LDAP, you 

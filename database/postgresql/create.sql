@@ -275,4 +275,5 @@ insert into  public.votinguser(user_id,user_name,pass_word,email,verified) value
 insert into  public.votinguser(user_id,user_name,pass_word,email,verified) values (2,'carlo','carlo','',1);
 insert into  public.votinguser(user_id,user_name,pass_word,email,verified) values (3,'dario','dario','',1);
 insert into  public.votinguser(user_id,user_name,pass_word,email,verified) values (4,'ezio','ezio','',1);
+insert into  public.votinguser(user_id,user_name,pass_word,email,verified) values (5,'gaia','gaia','',1);
 

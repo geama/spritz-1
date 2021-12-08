@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# COMMENTO DI PROVA
 import os
 from flask import Flask, render_template,request,redirect,url_for,jsonify
 from flask_login import LoginManager, login_required, current_user,login_user,logout_user
@@ -223,8 +224,9 @@ def votation_detail_maj_jud(v, options_array, voters_array):
     is_voter = voter_dao.is_voter(v.votation_id, current_user.u.user_id)
     if v.votation_status == votation_dao.STATUS_ENDED:
         counting = vote_maj_jud.votation_counting(v)
+        n_option = len(counting)
     return render_template('majority_jud/votation_detail_template.html', pagetitle=_("Election details"), \
-         v=v,  \
+         v=v, n_option=n_option, \
          states=votation_dao.states, options_array=options_array,juds_array=juds_array, \
          count_voters=voter_dao.count_voters(v.votation_id), \
          count_votes=vote_dao.count_votes(v.votation_id), \
